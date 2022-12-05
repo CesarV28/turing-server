@@ -19,7 +19,7 @@ const Contact = sequelize.define('Contact', {
   },
   phoneNumber: {
     type: DataTypes.STRING,
-    defaultValue: 'Turing-IA'
+    allowNull: false
   },
   company: {
     type: DataTypes.STRING,

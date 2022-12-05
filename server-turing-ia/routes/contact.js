@@ -23,7 +23,7 @@ router.get('/:id', contactGetById);
 
 router.put('/:id',[
     check('name', 'El nombre es requerido').not().isEmpty(),
-    check('message', 'Un mensaje es requerido').not().isEmpty(),
+    check('phoneNumber', 'Un mensaje es requerido').not().isEmpty(),
     check('email', 'Un email es requerido').not().isEmpty(),
     check('email', 'El email no tiene un formato correcto').isEmail(),
     fieldsValidator
@@ -31,7 +31,7 @@ router.put('/:id',[
 
 router.post('/', [
   check('name', 'El nombre es requerido').not().isEmpty(),
-  check('message', 'Un mensaje es requerido').not().isEmpty(),
+  check('phoneNumber', 'Un mensaje es requerido').not().isEmpty(),
   check('email', 'Un email es requerido').not().isEmpty(),
   check('email', 'El email no tiene un formato correcto').isEmail(),
   fieldsValidator
