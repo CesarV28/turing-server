@@ -24,6 +24,9 @@ const Contact = sequelize.define('Contact', {
   company: {
     type: DataTypes.STRING,
   },
+  job: {
+    type: DataTypes.STRING,
+  },
   message: {
     type: DataTypes.TEXT,
   },
