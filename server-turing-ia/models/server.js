@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 
 import blog from '../routes/blog.js';
+import contact from '../routes/contact.js';
 
 import { sequelize } from '../database/config.js'
 
@@ -11,7 +12,7 @@ class Server {
     constructor() {
         this.app = express();
         this.port = process.env.PORT;
-        this.userPath = '/api/user';
+        this.contactPath = '/api/contact';
         this.blogPath = '/api/blog';
 
         // conectar a la base de datos
@@ -51,6 +52,7 @@ class Server {
     routes() {
         
         this.app.use( this.blogPath, blog );
+        this.app.use( this.contactPath, contact );
 
     }
     // ================== listen ==================
