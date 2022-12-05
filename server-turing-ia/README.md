@@ -25,5 +25,5 @@ El archivo **.example.env** es un ejemplo de las variables de entorno que necesi
 - **PORT=**: puerto en el que el servidor va a estar. (recomendado 8080 si es para pruebas)
 - **MYSQL_DB=**: nombre de la base de datos
 - **MYSQL_USER=**: nombre de usuaior de la base de datos
-- **MYSQL_PASSWORD=**: contrasña de la base de datos
+- **MYSQL_PASSWORD=**: contraseña de la base de datos
 - **HOST=**: dominio donde correrá la aplicación
