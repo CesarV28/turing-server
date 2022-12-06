@@ -27,3 +27,6 @@ El archivo **.example.env** es un ejemplo de las variables de entorno que necesi
 - **MYSQL_USER=**: nombre de usuaior de la base de datos
 - **MYSQL_PASSWORD=**: contraseña de la base de datos
 - **HOST=**: dominio donde correrá la aplicación
+
+## API endpoints
+[Documentación](https://documenter.getpostman.com/view/22653738/2s8YzP14oR)
